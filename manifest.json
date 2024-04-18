@@ -19,5 +19,7 @@
         "16": "icons/icon_16x16.jpg",
         "48": "icons/icon_48x48.jpg",
         "128": "icons/icon_128x128.jpg"
-    }
+    },
+    
+    "manifest_version": 2
 }
