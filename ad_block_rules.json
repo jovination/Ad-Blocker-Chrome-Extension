@@ -1,0 +1,52 @@
+[
+    {
+      "id": "block_doubleclick",
+      "priority": 100,
+      "conditions": [
+        { "type": "urlPattern", "pattern": "*://*.doubleclick.net/*" }
+      ],
+      "actions": [ { "type": "cancel" } ]
+    },
+    {
+      "id": "block_googlesyndication",
+      "priority": 100,
+      "conditions": [
+        { "type": "urlPattern", "pattern": "*://*.googlesyndication.com/*" }
+      ],
+      "actions": [ { "type": "cancel" } ]
+    },
+    {
+      "id": "block_partner_googleadservices",
+      "priority": 100,
+      "conditions": [
+        { "type": "urlPattern", "pattern": "*://*.partner.googleadservices.com/*" }
+      ],
+      "actions": [ { "type": "cancel" } ]
+    },
+    {
+      "id": "block_ytimg",
+      "priority": 100,
+      "conditions": [
+        { "type": "urlPattern", "pattern": "*://*.ytimg.com/*" }
+      ],
+      "actions": [ { "type": "cancel" } ]
+    },
+    {
+      "id": "block_youtube_nocookie",
+      "priority": 100,
+      "conditions": [
+        { "type": "urlPattern", "pattern": "*://*.youtube-nocookie.com/*" }
+      ],
+      "actions": [ { "type": "cancel" } ]
+    },
+    {
+      "id": "block_google_analytics",
+      "priority": 100,
+      "conditions": [
+        { "type": "urlPattern", "pattern": "*://*.google-analytics.com/*" }
+      ],
+      "actions": [ { "type": "cancel" } ]
+    }
+    
+  ]
+  
