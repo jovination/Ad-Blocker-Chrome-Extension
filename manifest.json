@@ -1,25 +1,19 @@
 {
     "name": "Spiraxy Adblocker",
-    "version": "1.0",
-    "description":  "Spiraxy Adblocker is a simple adblocker that blocks ads on websites.",
-    "permissions":
-     [
-        "webRequest",
-        "webRequestBlocking",
-        "<all_urls>"
+    "version": "2.0",
+    "description": "Spiraxy Adblocker is a simple adblocker that blocks ads on websites.",
+    "permissions": [
+      "declarativeNetRequest",
+      "storage"
     ],
-
     "background": {
-        "scripts": [
-            "background.js"
-        ]
+      "scripts": "background.js"
     },
-
     "icons": {
-        "16": "icons/icon_16x16.png",
-        "48": "icons/icon_48x48.png",
-        "128": "icons/icon_128x128.png"
+      "16": "icons/icon_16x16.png",
+      "48": "icons/icon_48x48.png",
+      "128": "icons/icon_128x128.png"
     },
-
     "manifest_version": 3
-}
+  }
+  
