@@ -8,15 +8,18 @@ chrome.runtime.onInstalled.addListener(async () => {
  
      const rules = await response.json();
  
-     await chrome.declarativeNetRequest.updateRuleset({
-       priority: 1,
-       ruleSets: [{
-         id: "ad_blocker_rules",
-         rules: rules
-       }]
-     });
+     // Add a delay before calling updateRuleset
+     setTimeout(async () => {
+       await chrome.declarativeNetRequest.updateRuleset({
+         priority: 1,
+         ruleSets: [{
+           id: "ad_blocker_rules",
+           rules: rules
+         }]
+       });
  
-     console.log("Ad blocking rules loaded successfully.");
+       console.log("Ad blocking rules loaded successfully.");
+     }, 1000);  // Adjust the delay as needed
    } catch (error) {
      console.error("Failed to load ad blocking rules:", error);
    }
